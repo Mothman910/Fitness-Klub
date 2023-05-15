@@ -89,6 +89,8 @@
 }
 #option-2 img {
   object-fit: cover;
+  padding: 0;
+  margin: -5px;
 }
 
 /*# sourceMappingURL=styles.css.map */

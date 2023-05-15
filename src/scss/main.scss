@@ -93,5 +93,7 @@
   padding-left: calc(4.5rem + var(--bs-gutter-x) * 0.5);
   img {
     object-fit: cover;
+    padding: 0;
+    margin: -5px;
   }
 }
