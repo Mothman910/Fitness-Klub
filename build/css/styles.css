@@ -22,9 +22,10 @@
   position: fixed;
   height: 100vh;
   z-index: 1;
-  top: 0;
+  bottom: 0;
   left: 0;
-  transition: all 1s;
+  transition: width 1s;
+  overflow: overlay;
 }
 #left-navbar-hidden .nav-link {
   transition: all 1s;
@@ -62,6 +63,10 @@
 .bi {
   vertical-align: -0.125em;
   fill: currentColor;
+}
+
+.main-nav {
+  z-index: 1000;
 }
 
 .header-part-2 {

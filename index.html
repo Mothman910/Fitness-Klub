@@ -55,85 +55,82 @@
         </symbol>
     </svg>
     <!-- Bootstrap menu -->
-    <header class="sticky-top">
-        <div class="px-3 py-2 text-bg-dark">
-            <div class="container">
-                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-                    <a href="/"
-                        class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
-                        <svg class="bi me-2" role="img" aria-label="Bootstrap">
-                            <use xlink:href="./assets/logo/Fit Klub - Koszalin.svg#logo"></use>
-                        </svg>
-                    </a>
+    <div class="sticky-sm-top px-3 py-2 text-bg-dark main-nav position-relative">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none">
+                    <svg class="bi me-2" role="img" aria-label="Bootstrap">
+                        <use xlink:href="./assets/logo/Fit Klub - Koszalin.svg#logo"></use>
+                    </svg>
+                </a>
 
-                    <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
-                        <li>
-                            <a href="#" class="nav-link text-secondary">
+                <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                    <li>
+                        <a href="#" class="nav-link text-secondary">
+                            <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                                <use xlink:href="#home"></use>
+                            </svg>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white">
+                            <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                                <use xlink:href="#speedometer2"></use>
+                            </svg>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <a href="#" class="nav-link text-white btn btn-secondary dropdown-toggle" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 <svg class="bi d-block mx-auto mb-1" width="24" height="24">
-                                    <use xlink:href="#home"></use>
+                                    <use xlink:href="#table"></use>
                                 </svg>
-                                Home
+                                Orders
                             </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link text-white">
-                                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
-                                    <use xlink:href="#speedometer2"></use>
-                                </svg>
-                                Dashboard
-                            </a>
-                        </li>
-                        <li>
-                            <div class="dropdown">
-                                <a href="#" class="nav-link text-white btn btn-secondary dropdown-toggle" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <svg class="bi d-block mx-auto mb-1" width="24" height="24">
-                                        <use xlink:href="#table"></use>
-                                    </svg>
-                                    Orders
-                                </a>
 
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </div>
-                        </li>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </li>
 
-                        <li>
-                            <a href="#" class="nav-link text-white">
-                                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
-                                    <use xlink:href="#grid"></use>
-                                </svg>
-                                Products
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav-link text-white">
-                                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
-                                    <use xlink:href="#people-circle"></use>
-                                </svg>
-                                Customers
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                    <li>
+                        <a href="#" class="nav-link text-white">
+                            <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                                <use xlink:href="#grid"></use>
+                            </svg>
+                            Products
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white">
+                            <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                                <use xlink:href="#people-circle"></use>
+                            </svg>
+                            Customers
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="px-3 py-2 border-bottom mb-3 header-part-2">
-            <div class="container d-flex flex-wrap justify-content-center">
-                <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search">
-                    <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-                </form>
+    </div>
+    <div id="search" style="width: 100%; z-index: 999;" class="sticky-top py-2 border-bottom mb-3 header-part-2">
+        <div class="container d-flex flex-wrap justify-content-center">
+            <form class="col-12 col-lg-auto mb-2 mb-lg-0 me-lg-auto" role="search">
+                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+            </form>
 
-                <div class="text-end">
-                    <button type="button" class="btn btn-light text-dark me-2 foolishIn">Login</button>
-                    <button type="button" class="btn btn-primary">Sign-up</button>
-                </div>
+            <div class="text-end">
+                <button type="button" class="btn btn-light text-dark me-2 foolishIn">Login</button>
+                <button type="button" class="btn btn-primary">Sign-up</button>
             </div>
         </div>
-    </header>
+    </div>
     <!-- Divider -->
     <!-- <div class="b-example-divider divider"></div> -->
     <!-- Hidden left-navbar -->
