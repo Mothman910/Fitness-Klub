@@ -1,0 +1,96 @@
+**,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+// Divider
+
+.b-example-divider {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+  background-color: white;
+}
+
+// Left menu
+
+#left-navbar-hidden {
+  display: grid !important;
+  grid-template-rows: 1fr 1fr max-content;
+  align-content: center;
+  position: fixed;
+  height: 100vh;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  transition: all 1s;
+  .nav-link {
+    transition: all 1s;
+  }
+}
+.nav-link {
+  display: grid;
+  height: 72px;
+  align-content: center;
+  transition: all 1s;
+  justify-items: end;
+}
+
+.nav-hover {
+  width: 200px !important;
+  .left-nav-top {
+    // width: 200px;
+  }
+}
+
+.left-nav-top {
+  margin-top: auto;
+  align-self: flex-end;
+  width: 72px;
+  height: 72px;
+  justify-self: end;
+  transition: all 1s;
+}
+.left-menu-hidden {
+  display: grid;
+  align-self: flex-start;
+}
+.profile-icon {
+  align-self: self-end;
+}
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+// Header
+
+.header-part-2 {
+  background-color: #c5f37c;
+  margin-bottom: 0 !important;
+}
+
+// Main container
+
+.main-container {
+  padding-left: calc(4.5rem + var(--bs-gutter-x) * 0.5);
+  position: relative;
+}
+
+// Middle content
+#option-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-left: calc(4.5rem + var(--bs-gutter-x) * 0.5);
+  img {
+    object-fit: cover;
+  }
+}
