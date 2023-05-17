@@ -9,7 +9,9 @@
     <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css' rel='stylesheet'
         integrity='sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ' crossorigin='anonymous'>
     <script src="src/js/color-module-bootstrap.js"></script>
+    <!-- Libraries of animations -->
     <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
+    <script src="./node_modules\animejs\lib\anime.min.js"></script>
     <!-- Custom files -->
     <link rel="stylesheet" href="./build/css/styles.css">
     <script src="./src/js/main.js" defer></script>
@@ -148,7 +150,7 @@
                 <a href="#" class="nav-link active py-3 border-bottom rounded-0" aria-current="page"
                     class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
                     type="button" role="tab" data-bs-placement="right" aria-label="Home" data-bs-original-title="Home">
-                    <svg class="bi pe-none" width="36" height="36" role="img" aria-label="Home">
+                    <svg id="anim-test" class="bi pe-none" width="36" height="36" role="img" aria-label="Home">
                         <use xlink: href="./assets/logo/Apple.svg#apple"></use>
                     </svg>
                 </a>
@@ -240,10 +242,11 @@
                     <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
                         <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Border hero with cropped image and shadows
                         </h1>
-                        <p class="lead">Quickly design and customize responsive
-                            mobile-first sites with Bootstrap, the
-                            world’s most popular front-end open source toolkit, featuring Sass variables and mixins,
-                            responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                        <p class="anim-delay">- Poprawa kondycji fizycznej i zdrowia</p>
+                        <p class="anim-delay">- Możliwość korzystania z różnych sprzętów i zajęć</p>
+                        <p class="anim-delay">- Motywacja i wsparcie od trenerów i innych uczestników</p>
+                        <p class="anim-delay">- Znajomość nowych ludzi i nawiązywanie kontaktów</p>
+                        <p class="anim-delay">- Relaks i redukcja stresu</p>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
                             <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Primary</button>
                             <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
@@ -374,6 +377,15 @@
 
             },
         })
+    </script>
+    <script>
+        anime({
+            targets: ".anim-test",
+            translateX: 250,
+            rotate: "1turn",
+            backgroundColor: "#FFF",
+            duration: 800,
+        });
     </script>
 </body>
 

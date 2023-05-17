@@ -63,3 +63,9 @@ addEventListener("scroll", () => {
     "left-navbar-hidden"
   ).style.height = `calc(100% - ${navHeight}px)`;
 });
+anime({
+  targets: ".anim-delay",
+  translateX: 540,
+  delay: anime.stagger(600),
+  opacity: 1,
+});
