@@ -32,7 +32,7 @@ body {
   align-content: center;
   position: fixed;
   height: 100vh;
-  z-index: 1;
+  z-index: 999;
   bottom: 0;
   left: 0;
   transition: width 0.5s ease-in-out;
@@ -122,11 +122,11 @@ body {
   object-position: center;
   width: 100%;
   position: relative;
-  left: -70px;
-  z-index: 998;
-}
-#shaker2 {
-  position: absolute;
-  width: 100px;
-  z-index: 1001;
+  left: 130px;
+  bottom: -300px;
+  z-index: 997;
+  transform: scale(0);
+  @media screen and (max-width: 992px) {
+    left: 200px;
+  }
 }

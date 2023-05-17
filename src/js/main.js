@@ -69,3 +69,7 @@ anime({
   delay: anime.stagger(600),
   opacity: 1,
 });
+
+// Import animacji shake
+import { scroll2 } from "./shake.js";
+scroll2();
