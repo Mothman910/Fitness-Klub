@@ -112,3 +112,21 @@ body {
   left: -520px;
   opacity: 0;
 }
+
+// Option 1
+.shaker-container {
+  overflow: visible !important;
+}
+#shaker {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  position: relative;
+  left: -70px;
+  z-index: 998;
+}
+#shaker2 {
+  position: absolute;
+  width: 100px;
+  z-index: 1001;
+}

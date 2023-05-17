@@ -109,4 +109,23 @@ body {
   opacity: 0;
 }
 
+.shaker-container {
+  overflow: visible !important;
+}
+
+#shaker {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  position: relative;
+  left: -70px;
+  z-index: 998;
+}
+
+#shaker2 {
+  position: absolute;
+  width: 100px;
+  z-index: 1001;
+}
+
 /*# sourceMappingURL=styles.css.map */
