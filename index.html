@@ -212,7 +212,7 @@
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
             tabindex="0">
             <div class="px-4 pt-5 my-5 text-center border-bottom">
-                <h1 class="display-4 fw-bold text-body-emphasis">Centered screenshot</h1>
+                <h1 class="display-4 fw-bold text-body-emphasis tada"><span class="typewriter"></span></h1>
                 <div class="col-lg-6 mx-auto">
                     <div class="tab-content" id="pills-tabContent">
 
@@ -240,7 +240,8 @@
                     <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
                         <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Border hero with cropped image and shadows
                         </h1>
-                        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the
+                        <p class="lead">Quickly design and customize responsive
+                            mobile-first sites with Bootstrap, the
                             world’s most popular front-end open source toolkit, featuring Sass variables and mixins,
                             responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
                         <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
@@ -355,6 +356,25 @@
     <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js'
         integrity='sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe'
         crossorigin='anonymous'></script>
+    <script src='https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js'></script>
+    <script>
+        var typingEffect = new Typed('.typewriter', {
+            strings: ['Moc!', 'Stamina!', 'Witamina!'],
+            loop: true,
+            typeSpeed: 130,
+            backDelay: 2000,
+            backSpeed: 90,
+            onStringTyped: (arrayPos, self) => {
+                document.getElementsByClassName("tada")[0].classList.add("animate__tada", "animate__animated", "animate__repeat-2");
+                console.log("czujka")
+                setTimeout(() => {
+                    document.getElementsByClassName("tada")[0].classList.remove("animate__tada", "animate__animated", "animate__infinite");
+                    console.log("czujka2")
+                }, 3000)
+
+            },
+        })
+    </script>
 </body>
 
 </html>

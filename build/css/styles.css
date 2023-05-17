@@ -1,8 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 **,
 *::before,
 *::after {
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Special Elite", cursive;
 }
 
 .b-example-divider {
@@ -91,6 +96,10 @@
   object-fit: cover;
   padding: 0;
   margin: -5px;
+}
+#option-2 .typewriter {
+  height: 60px;
+  line-height: 60px;
 }
 
 /*# sourceMappingURL=styles.css.map */
