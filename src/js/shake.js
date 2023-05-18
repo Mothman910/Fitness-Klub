@@ -8,7 +8,7 @@ export function scroll2() {
     // Pobierz położenie elementu
     let rect = el.getBoundingClientRect();
     // Sprawdź, czy górna i dolna krawędź elementu znajdują się w granicach okna
-    return rect.top <= window.innerHeight;
+    return rect.top - 100 <= window.innerHeight;
   }
 
   // Dodaj zdarzenie scroll do okna
