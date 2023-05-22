@@ -1,4 +1,4 @@
-console.log("czujka");
+// console.log("czujka");
 // Wysuwanie lewego menu
 document
   .getElementById("left-navbar-hidden")

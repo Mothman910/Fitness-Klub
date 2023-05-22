@@ -32,4 +32,3 @@ export function scroll3() {
     }
   });
 }
-export const hmm = () => console.log("działa");

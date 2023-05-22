@@ -24,7 +24,7 @@ export function scroll2() {
         translateY: -300,
         duration: 4000,
         opacity: 1,
-        rotate: 2170,
+        rotate: 1170,
         scale: 1.15,
         easing: "spring(1, 80, 10, 0)",
       });
@@ -33,4 +33,3 @@ export function scroll2() {
     }
   });
 }
-export const hmm = () => console.log("działa");
