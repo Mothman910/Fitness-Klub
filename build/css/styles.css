@@ -31,8 +31,8 @@ body {
   height: 100vh;
   z-index: 997;
   bottom: 0;
-  left: 0;
-  transition: width 0.5s ease-in-out;
+  left: -130px;
+  transition: left 0.5s ease-in-out;
   overflow: overlay;
 }
 #left-navbar-hidden .nav-link {
@@ -57,10 +57,11 @@ body {
   grid-template-columns: 1fr max-content;
   align-items: center;
   justify-items: center;
+  left: -150px;
 }
 
 .nav-hover {
-  width: 200px !important;
+  left: 0px !important;
 }
 
 .left-nav-top {
