@@ -43,12 +43,22 @@ body {
     transition: all 0.2s;
   }
 }
+.nav-list {
+  height: 100%;
+  justify-content: space-around;
+}
 .nav-link {
   display: grid;
   height: 72px;
   align-content: center;
   transition: all 0.1;
   justify-items: end;
+}
+.nav-list a {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  align-items: center;
+  justify-items: center;
 }
 
 .nav-hover {
